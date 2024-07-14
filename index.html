@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>dice-game</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/eb92a68e75.js" crossorigin="anonymous"></script>
+
+
+  </head>
+  <body>  
+    <section class="heading-section" id="home">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="">Malenko</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#play-section">Play</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#result">Result</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+          <!-- Title -->
+  
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>MALENKO THE JUDGE. <i class="fa-solid fa-gavel"></i></h1>
+            <h3>Are there any disagreements you need to resolve with your partner? Here's a dice game to determine a winner.</h3>
+          </div>
+              
+          <div class="media col-lg-6">
+            <img class="title-image" src="images/Judge.jpg" alt="Judge-icon"/>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="play-section" id="play-section">
+      <div class="container-fluid">
+        <h3 class="play-heading">Let's begin our adventure!</h3>
+        <div class="row">            
+          <div class="dice col-lg-6 col-md-6">
+            <p>Player1</p>
+            <img class="img1" src="">
+          </div>
+          <div class="dice col-lg-6 col-md-6">
+            <p>Player2</p>
+            <img class="img2" src="">
+          </div>
+        </div>
+        <div class="button-container">
+          <button type="button" id="edit-name" onclick="editNames()" class="btn btn-outline-secondary btn-lg">Edit names</button>
+        </div>
+        <div class="button-container">
+          <button type="button" id="toss" onclick="rollTheDice()" class="btn btn-outline-secondary btn-lg">Roll the dice</button>
+        </div>        
+      </div>
+    </section>
+
+
+
+    <section class="result-section">
+      <div class="container-fluid">
+        <div>
+          <h2>Find your result here!</h2>
+        </div>
+        <div class="result-para">
+          <h3 class="display-result" id="result">Here is your result.</h3>
+        </div>        
+      </div>
+    </section>
+    
+    <section class="testimonial-section" id="testimonial">
+      <div id="testimonial-carousel" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item container-fluid active">
+            <h2 class="testimonial-text">
+              I frequently employ this dice game to settle disputes with my friends. Give it a shot!
+            </h2>
+            <img class="testimonial-image" src="images/malenko.jpg" alt="man-profile" />
+            <em>Abuja, Nigeria</em>
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">It's a stress-saver for me. I no longer expend much energy dragging out issues with someone. All I have to do is roll the dice.</h2>
+            <img class="testimonial-image" src="images/emike.JPG" alt="lady-profile">
+            <em>Auchi, Nigeria</em>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <section class="footer-section" id="footer">
+      <div class="footer container-fluid">
+        <p>© Copyright Abubakar</p>
+        <a class="social-media" href="https://www.linkedin.com/in/abdulwasiu-abubakar-419511238">Linkedin</a>
+        <a class="social-media" href="https://web.facebook.com/abdulwasiuabubakr94">Facebook</a>
+        <a class="social-media" href="https://www.instagram.com/abdulwasiuabubakr94/">Instagram</a>
+      </div>
+    </section>
+
+    <script src= "index.js" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  </body>
+</html>
